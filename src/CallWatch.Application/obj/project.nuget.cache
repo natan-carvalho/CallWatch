@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4x0M5y1bnG0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWatch.Application\\CallWatch.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\natan\\.nuget\\packages\\selenium.webdriver\\4.35.0\\selenium.webdriver.4.35.0.nupkg.sha512"
+  ],
+  "logs": []
+}

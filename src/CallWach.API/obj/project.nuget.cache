@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "pIwinszb6g4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWach.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\natan\\.nuget\\packages\\selenium.webdriver\\4.35.0\\selenium.webdriver.4.35.0.nupkg.sha512",
+    "C:\\Users\\natan\\.nuget\\packages\\selenium.webdriver.chromedriver\\141.0.7390.5400\\selenium.webdriver.chromedriver.141.0.7390.5400.nupkg.sha512"
+  ],
+  "logs": []
+}
