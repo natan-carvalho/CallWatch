@@ -50,6 +50,9 @@
         }
       },
       "CallWach.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
         "runtime": {
           "CallWach.Domain.dll": {
             "assemblyVersion": "1.0.0",

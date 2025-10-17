@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LTnDc0/DdXs=",
+  "dgSpecHash": "Ovck4HUIaPY=",
   "success": true,
   "projectFilePath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

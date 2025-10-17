@@ -51,6 +51,9 @@
       "CallWach.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
         "compile": {
           "bin/placeholder/CallWach.Domain.dll": {}
         },

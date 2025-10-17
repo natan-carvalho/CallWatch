@@ -9,3 +9,4 @@ C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\Ca
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\refint\CallWach.Domain.dll
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.pdb
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\ref\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.csproj.AssemblyReference.cache

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CallWach.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02cd03a7c9fe5ad64f94888b7a0afee2c5f88247")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d962240be289ae6276b47a216d116db4022c43d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CallWach.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CallWach.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

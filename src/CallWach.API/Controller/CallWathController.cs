@@ -1,3 +1,4 @@
+using CallWach.Domain.Aggregates;
 using CallWatch.Application.UseCases.GetAllCalls;
 using CallWatch.Application.UseCases.GetCallInfo;
 using CallWatch.Application.UseCases.Login;
@@ -21,8 +22,8 @@ public class CallWathController(
 
   public void Execute()
   {
-    using var driver = new ChromeDriver(_options);
     _options.AddArgument("--start-maximized");
+    using var driver = new ChromeDriver(_options);
 
     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
@@ -42,9 +43,14 @@ public class CallWathController(
           var cells = row.FindElements(By.TagName("td"));
           if (cells.Count > 0)
           {
-            // var callInfo = _getCallInfoUseCase.Execute(cells);
-            Console.WriteLine($"Código: {cells[0].Text}");
-            Console.WriteLine("---------------------------");
+            var callInfo = _getCallInfoUseCase.Execute(cells);
+            var validatePercentage = CallAggregate.ValidatePercentage(callInfo.Percentage);
+
+            if (validatePercentage)
+            {
+              Console.WriteLine($"Chamado quase estourando, responsável: {callInfo.Responsible}, \nPercentual: {callInfo.Percentage} \n{callInfo.Code}");
+              Console.WriteLine("---------------------------");
+            }
           }
         }
         Console.WriteLine("Título da página: " + title);
