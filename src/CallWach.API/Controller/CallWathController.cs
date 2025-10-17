@@ -18,6 +18,7 @@ public class CallWathController(
   private readonly IGetAllCallsUseCase _getAllCallsUseCase = getAllCallsUseCase;
   private readonly IGetCallInfoUseCase _getCallInfoUseCase = getCallInfoUseCase;
   private const string BASEURL = "https://gestaox.aec.com.br/Chamados/AtividadesChamadosV2";
+  private const int TimerValue = 5;
   private readonly ChromeOptions _options = new();
 
   public async Task Execute()
@@ -59,7 +60,7 @@ public class CallWathController(
           }
 
           Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] Verificação concluída. Aguardando próximo ciclo...");
-          await Task.Delay(TimeSpan.FromMinutes(5));
+          await Task.Delay(TimeSpan.FromMinutes(TimerValue));
           driver.Navigate().GoToUrl(BASEURL);
         }
       }
