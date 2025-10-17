@@ -8,4 +8,4 @@ serviceCollection.AddTransient<CallWathController>();
 serviceCollection.AddApplication();
 var serviceProvider = serviceCollection.BuildServiceProvider();
 var controller = serviceProvider.GetService<CallWathController>();
-controller?.Execute();
+await controller!.Execute();

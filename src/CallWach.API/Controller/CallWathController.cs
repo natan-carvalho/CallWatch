@@ -20,7 +20,7 @@ public class CallWathController(
   private const string BASEURL = "https://gestaox.aec.com.br/Chamados/AtividadesChamadosV2";
   private readonly ChromeOptions _options = new();
 
-  public void Execute()
+  public async Task Execute()
   {
     _options.AddArgument("--start-maximized");
     using var driver = new ChromeDriver(_options);
@@ -38,23 +38,30 @@ public class CallWathController(
       {
         driver.Navigate().GoToUrl(BASEURL);
 
-        foreach (var row in _getAllCallsUseCase.Execute(wait))
+        while (true)
         {
-          var cells = row.FindElements(By.TagName("td"));
-          if (cells.Count > 0)
-          {
-            var callInfo = _getCallInfoUseCase.Execute(cells);
-            var validatePercentage = CallAggregate.ValidatePercentage(callInfo.Percentage);
+          Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] Verificando chamados...");
 
-            if (validatePercentage)
+          foreach (var row in _getAllCallsUseCase.Execute(wait))
+          {
+            var cells = row.FindElements(By.TagName("td"));
+            if (cells.Count > 0)
             {
-              Console.WriteLine($"Chamado quase estourando, responsável: {callInfo.Responsible}, \nPercentual: {callInfo.Percentage} \n{callInfo.Code}");
-              Console.WriteLine("---------------------------");
+              var callInfo = _getCallInfoUseCase.Execute(cells);
+              var validatePercentage = CallAggregate.ValidatePercentage(callInfo.Percentage);
+
+              if (validatePercentage)
+              {
+                Console.WriteLine($"Chamado quase estourando, responsável: {callInfo.Responsible}, \nPercentual: {callInfo.Percentage} \n{callInfo.Code}");
+                Console.WriteLine("---------------------------");
+              }
             }
           }
+
+          Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] Verificação concluída. Aguardando próximo ciclo...");
+          await Task.Delay(TimeSpan.FromMinutes(5));
+          driver.Navigate().GoToUrl(BASEURL);
         }
-        Console.WriteLine("Título da página: " + title);
-        Console.ReadLine();
       }
       Console.WriteLine($"Título da página: {title}");
       Console.ReadLine();
