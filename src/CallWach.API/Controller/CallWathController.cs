@@ -1,3 +1,4 @@
+using CallWatch.Application.UseCases.GetAllCalls;
 using CallWatch.Application.UseCases.Login;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -5,38 +6,35 @@ using OpenQA.Selenium.Support.UI;
 
 namespace CallWach.API.Controller;
 
-public class CallWathController(ILoginUseCase loginUseCase)
+public class CallWathController(
+  ILoginUseCase loginUseCase,
+  IGetAllCallsUseCase getAllCallsUseCase
+  )
 {
   private readonly ILoginUseCase _loginUseCase = loginUseCase;
+  private readonly IGetAllCallsUseCase _getAllCallsUseCase = getAllCallsUseCase;
   private const string BASEURL = "https://gestaox.aec.com.br/Chamados/AtividadesChamadosV2";
   private readonly ChromeOptions _options = new();
 
   public void Execute()
   {
-    _options.AddArgument("--start-maximized");
     using var driver = new ChromeDriver(_options);
+    _options.AddArgument("--start-maximized");
 
     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
     try
     {
       driver.Navigate().GoToUrl(BASEURL);
+      var title = driver.Title;
 
       _loginUseCase.Execute("natanael.santos", "Na118629*963,", wait);
 
-      if (driver.Title == "Bem vindo ao sistema GestaoX - Service Desk")
+      if (title == "Bem vindo ao sistema GestaoX - Service Desk")
       {
         driver.Navigate().GoToUrl(BASEURL);
 
-        var inputCode = wait.Until(d => d.FindElement(By.Id("ctl00_MainContent_gridchamados_ctl00_ctl02_ctl02_FilterTextBox_CODIGO")));
-        inputCode.SendKeys("AIR0");
-        inputCode.SendKeys(Keys.Enter);
-
-        Thread.Sleep(3000); // Espera 3 segundos para garantir que a tabela foi carregada
-
-        var table = wait.Until(d => d.FindElement(By.Id("ctl00_MainContent_gridchamados_ctl00")));
-        var rows = table.FindElements(By.TagName("tr"));
-        foreach (var row in rows)
+        foreach (var row in _getAllCallsUseCase.Execute(wait))
         {
           var cells = row.FindElements(By.TagName("td"));
           if (cells.Count > 0)
@@ -50,10 +48,11 @@ public class CallWathController(ILoginUseCase loginUseCase)
             Console.WriteLine("---------------------------");
           }
         }
-
-        Console.WriteLine("Título da página: " + driver.Title);
+        Console.WriteLine("Título da página: " + title);
         Console.ReadLine();
       }
+      Console.WriteLine($"Título da página: {title}");
+      Console.ReadLine();
     }
     catch (Exception ex)
     {
