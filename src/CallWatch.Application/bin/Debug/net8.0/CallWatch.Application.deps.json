@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "CallWatch.Application/1.0.0": {
         "dependencies": {
+          "CallWach.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Selenium.WebDriver": "4.35.0"
         },
@@ -47,6 +48,14 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "CallWach.Domain/1.0.0": {
+        "runtime": {
+          "CallWach.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -69,6 +78,11 @@
       "sha512": "sha512-C9OrObS2KLyUQDJNRY883JAc4n5q58pBYmY954hf+lGMQQcsz4Ias2mk91lHkLXFX+2qMttya4df9lGP1SLiGQ==",
       "path": "selenium.webdriver/4.35.0",
       "hashPath": "selenium.webdriver.4.35.0.nupkg.sha512"
+    },
+    "CallWach.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

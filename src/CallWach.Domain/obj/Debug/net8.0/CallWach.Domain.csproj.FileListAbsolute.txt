@@ -1,0 +1,11 @@
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\bin\Debug\net8.0\CallWach.Domain.deps.json
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\bin\Debug\net8.0\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\bin\Debug\net8.0\CallWach.Domain.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.AssemblyInfoInputs.cache
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.AssemblyInfo.cs
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.csproj.CoreCompileInputs.cache
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\refint\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\CallWach.Domain.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.Domain\obj\Debug\net8.0\ref\CallWach.Domain.dll

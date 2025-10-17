@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallWach.API", "src\CallWac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallWatch.Application", "src\CallWatch.Application\CallWatch.Application.csproj", "{2D5E7167-F225-42F9-B776-05542864BCF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallWach.Domain", "src\CallWach.Domain\CallWach.Domain.csproj", "{37467739-BAE6-4DE1-9B4B-3C5A818704B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{2D5E7167-F225-42F9-B776-05542864BCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5E7167-F225-42F9-B776-05542864BCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5E7167-F225-42F9-B776-05542864BCF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37467739-BAE6-4DE1-9B4B-3C5A818704B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37467739-BAE6-4DE1-9B4B-3C5A818704B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37467739-BAE6-4DE1-9B4B-3C5A818704B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37467739-BAE6-4DE1-9B4B-3C5A818704B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1963D8CE-83C3-4E1B-A3B3-F0B03D86AD3B} = {F01494DF-5E4E-4238-B8A2-D29277F08DCD}
 		{2D5E7167-F225-42F9-B776-05542864BCF1} = {F01494DF-5E4E-4238-B8A2-D29277F08DCD}
+		{37467739-BAE6-4DE1-9B4B-3C5A818704B1} = {F01494DF-5E4E-4238-B8A2-D29277F08DCD}
 	EndGlobalSection
 EndGlobal

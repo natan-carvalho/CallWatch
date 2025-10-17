@@ -1,4 +1,5 @@
 using CallWatch.Application.UseCases.GetAllCalls;
+using CallWatch.Application.UseCases.GetCallInfo;
 using CallWatch.Application.UseCases.Login;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -8,11 +9,13 @@ namespace CallWach.API.Controller;
 
 public class CallWathController(
   ILoginUseCase loginUseCase,
-  IGetAllCallsUseCase getAllCallsUseCase
+  IGetAllCallsUseCase getAllCallsUseCase,
+  IGetCallInfoUseCase getCallInfoUseCase
   )
 {
   private readonly ILoginUseCase _loginUseCase = loginUseCase;
   private readonly IGetAllCallsUseCase _getAllCallsUseCase = getAllCallsUseCase;
+  private readonly IGetCallInfoUseCase _getCallInfoUseCase = getCallInfoUseCase;
   private const string BASEURL = "https://gestaox.aec.com.br/Chamados/AtividadesChamadosV2";
   private readonly ChromeOptions _options = new();
 
@@ -39,12 +42,8 @@ public class CallWathController(
           var cells = row.FindElements(By.TagName("td"));
           if (cells.Count > 0)
           {
-            Console.WriteLine("Código: " + cells[0].Text);
-            Console.WriteLine("Solicitante: " + cells[8].Text);
-            Console.WriteLine("Responsável: " + cells[9].Text);
-            Console.WriteLine("Serviço: " + cells[11].Text);
-            Console.WriteLine("Porcentagem: " + cells[18].Text);
-            Console.WriteLine("Status: " + cells[20].Text);
+            // var callInfo = _getCallInfoUseCase.Execute(cells);
+            Console.WriteLine($"Código: {cells[0].Text}");
             Console.WriteLine("---------------------------");
           }
         }

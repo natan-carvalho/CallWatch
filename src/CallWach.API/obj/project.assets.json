@@ -73,10 +73,21 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "CallWach.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CallWach.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CallWach.Domain.dll": {}
+        }
+      },
       "CallWatch.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "CallWach.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Selenium.WebDriver": "4.35.0"
         },
@@ -199,6 +210,11 @@
         "selenium.webdriver.chromedriver.141.0.7390.5400.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
+    },
+    "CallWach.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CallWach.Domain/CallWach.Domain.csproj",
+      "msbuildProject": "../CallWach.Domain/CallWach.Domain.csproj"
     },
     "CallWatch.Application/1.0.0": {
       "type": "project",

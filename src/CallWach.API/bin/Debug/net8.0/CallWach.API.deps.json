@@ -62,8 +62,17 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/141.0.7390.5400": {},
+      "CallWach.Domain/1.0.0": {
+        "runtime": {
+          "CallWach.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "CallWatch.Application/1.0.0": {
         "dependencies": {
+          "CallWach.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Selenium.WebDriver": "4.35.0"
         },
@@ -109,6 +118,11 @@
       "sha512": "sha512-Yax9Z5NB7Fw7VKiqo7wdeULGdbMHr4euapgZgAWuStJSsP/8JKjbUzKwv4zvk3mszPvBx3esvngVjCF7hiFDjQ==",
       "path": "selenium.webdriver.chromedriver/141.0.7390.5400",
       "hashPath": "selenium.webdriver.chromedriver.141.0.7390.5400.nupkg.sha512"
+    },
+    "CallWach.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "CallWatch.Application/1.0.0": {
       "type": "project",

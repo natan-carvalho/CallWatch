@@ -12,7 +12,7 @@ public class GetAllCallsUseCase : IGetAllCallsUseCase
     inputCode.SendKeys("AIR0");
     inputCode.SendKeys(Keys.Enter);
 
-    Thread.Sleep(3000); // Espera 3 segundos para garantir que a tabela foi carregada
+    Thread.Sleep(millisecondsTimeout: 4000); // Espera 3 segundos para garantir que a tabela foi carregada
 
     var table = wait.Until(d => d.FindElement(By.Id("ctl00_MainContent_gridchamados_ctl00")));
     return table.FindElements(By.TagName("tr"));

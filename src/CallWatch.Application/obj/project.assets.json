@@ -47,6 +47,16 @@
             "rid": "win"
           }
         }
+      },
+      "CallWach.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CallWach.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CallWach.Domain.dll": {}
+        }
       }
     }
   },
@@ -104,10 +114,16 @@
         "selenium.webdriver.4.35.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "CallWach.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CallWach.Domain/CallWach.Domain.csproj",
+      "msbuildProject": "../CallWach.Domain/CallWach.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CallWach.Domain >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.2",
       "Selenium.WebDriver >= 4.35.0"
     ]
@@ -136,7 +152,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj": {
+              "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

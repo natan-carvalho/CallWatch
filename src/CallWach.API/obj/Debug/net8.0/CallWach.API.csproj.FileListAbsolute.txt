@@ -22,3 +22,5 @@ C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\obj\Debug\net8.0\refin
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\obj\Debug\net8.0\CallWach.API.pdb
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\obj\Debug\net8.0\CallWach.API.genruntimeconfig.cache
 C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\obj\Debug\net8.0\ref\CallWach.API.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\bin\Debug\net8.0\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWach.API\bin\Debug\net8.0\CallWach.Domain.pdb

@@ -10,3 +10,6 @@ C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\obj\Debug\net
 C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\obj\Debug\net8.0\refint\CallWatch.Application.dll
 C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\obj\Debug\net8.0\CallWatch.Application.pdb
 C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\obj\Debug\net8.0\ref\CallWatch.Application.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\bin\Debug\net8.0\CallWach.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\bin\Debug\net8.0\CallWach.Domain.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Application\obj\Debug\net8.0\CallWatc.D66207E9.Up2Date

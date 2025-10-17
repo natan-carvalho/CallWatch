@@ -1,5 +1,6 @@
 using CallWatch.Application.UseCases;
 using CallWatch.Application.UseCases.GetAllCalls;
+using CallWatch.Application.UseCases.GetCallInfo;
 using CallWatch.Application.UseCases.Login;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +12,7 @@ public static class DependencyInjectionExtension
   {
     services.AddScoped<ILoginUseCase, LoginUseCase>();
     services.AddScoped<IGetAllCallsUseCase, GetAllCallsUseCase>();
+    services.AddTransient<IGetCallInfoUseCase, GetCallInfoUseCase>();
 
     return services;
   }
