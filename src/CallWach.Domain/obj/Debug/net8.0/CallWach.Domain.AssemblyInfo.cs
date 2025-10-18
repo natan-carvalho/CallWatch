@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CallWach.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+365e2355f721a1b037eebe37c48d7b4d972eb3ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de4bc53d2a76e7b87eb3eee5dfe66b1bc25b275d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CallWach.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CallWach.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

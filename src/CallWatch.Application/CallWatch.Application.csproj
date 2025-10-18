@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CallWach.Domain\CallWach.Domain.csproj" />
+    <ProjectReference Include="..\CallWach.Domain\CallWatch.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tsTaLaYBwW8=",
+  "dgSpecHash": "LAK+7Hw7ofk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWach.API.csproj",
+  "projectFilePath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWatch.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\natan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",

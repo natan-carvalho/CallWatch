@@ -73,24 +73,11 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
-      "CallWach.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
-        },
-        "compile": {
-          "bin/placeholder/CallWach.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CallWach.Domain.dll": {}
-        }
-      },
       "CallWatch.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CallWach.Domain": "1.0.0",
+          "CallWatch.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Selenium.WebDriver": "4.35.0"
         },
@@ -99,6 +86,19 @@
         },
         "runtime": {
           "bin/placeholder/CallWatch.Application.dll": {}
+        }
+      },
+      "CallWatch.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/CallWatch.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CallWatch.Domain.dll": {}
         }
       }
     }
@@ -214,15 +214,15 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
-    "CallWach.Domain/1.0.0": {
-      "type": "project",
-      "path": "../CallWach.Domain/CallWach.Domain.csproj",
-      "msbuildProject": "../CallWach.Domain/CallWach.Domain.csproj"
-    },
     "CallWatch.Application/1.0.0": {
       "type": "project",
       "path": "../CallWatch.Application/CallWatch.Application.csproj",
       "msbuildProject": "../CallWatch.Application/CallWatch.Application.csproj"
+    },
+    "CallWatch.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CallWach.Domain/CallWatch.Domain.csproj",
+      "msbuildProject": "../CallWach.Domain/CallWatch.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -239,9 +239,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWach.API.csproj",
-      "projectName": "CallWach.API",
-      "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWach.API.csproj",
+      "projectUniqueName": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWatch.API.csproj",
+      "projectName": "CallWatch.API",
+      "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\CallWatch.API.csproj",
       "packagesPath": "C:\\Users\\natan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.API\\obj\\",
       "projectStyle": "PackageReference",

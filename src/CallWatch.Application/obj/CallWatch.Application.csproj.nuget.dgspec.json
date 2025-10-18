@@ -4,12 +4,12 @@
     "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWatch.Application\\CallWatch.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj": {
+    "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWatch.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj",
-        "projectName": "CallWach.Domain",
-        "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWatch.Domain.csproj",
+        "projectName": "CallWatch.Domain",
+        "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWatch.Domain.csproj",
         "packagesPath": "C:\\Users\\natan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj": {
-                "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWach.Domain.csproj"
+              "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWatch.Domain.csproj": {
+                "projectPath": "C:\\Users\\natan\\projects\\csharp\\CallWatch\\src\\CallWach.Domain\\CallWatch.Domain.csproj"
               }
             }
           }
