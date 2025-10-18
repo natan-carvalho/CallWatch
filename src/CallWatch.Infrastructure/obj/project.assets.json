@@ -1049,7 +1049,8 @@
     "net8.0": [
       "CallWatch.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.21",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.21"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.21",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.2"
     ]
   },
   "packageFolders": {
@@ -1105,6 +1106,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.0.21, )"
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[8.0.2, )"
           }
         },
         "imports": [

@@ -9,12 +9,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="141.0.7390.5400" />
     <PackageReference Include="Selenium.WebDriver" Version="4.35.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CallWach.Domain\CallWatch.Domain.csproj" />
     <ProjectReference Include="..\CallWatch.Application\CallWatch.Application.csproj" />
+    <ProjectReference Include="..\CallWatch.Infrastructure\CallWatch.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

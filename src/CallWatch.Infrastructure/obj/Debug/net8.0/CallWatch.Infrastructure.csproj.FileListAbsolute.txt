@@ -1,0 +1,15 @@
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\bin\Debug\net8.0\CallWatch.Infrastructure.deps.json
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\bin\Debug\net8.0\CallWatch.Infrastructure.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\bin\Debug\net8.0\CallWatch.Infrastructure.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\bin\Debug\net8.0\CallWatch.Domain.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\bin\Debug\net8.0\CallWatch.Domain.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.AssemblyInfo.cs
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatc.C61CB03A.Up2Date
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\refint\CallWatch.Infrastructure.dll
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\CallWatch.Infrastructure.pdb
+C:\Users\natan\projects\csharp\CallWatch\src\CallWatch.Infrastructure\obj\Debug\net8.0\ref\CallWatch.Infrastructure.dll
