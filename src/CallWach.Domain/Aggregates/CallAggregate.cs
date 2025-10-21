@@ -1,5 +1,3 @@
-using CallWach.Domain.Entities;
-
 namespace CallWach.Domain.Aggregates;
 
 public class CallAggregate
