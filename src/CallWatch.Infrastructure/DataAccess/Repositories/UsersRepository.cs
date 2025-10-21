@@ -8,14 +8,9 @@ public class UsersRepository(CallWatchDbContext dbContext) : IUsersReadOnlyRepos
 {
   private readonly CallWatchDbContext _dbContext = dbContext;
 
-  // public async Task Create(User user)
-  // {
-  //   return await _dbContext.Users.AddAsync(user);
-  // }
-
-  public async Task<User?> GetByNumber(string number)
+  public async Task<User?> GetByName(string responsibleName)
   {
-    var user = await _dbContext.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Number == number);
+    var user = await _dbContext.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Name == responsibleName);
     await _dbContext.SaveChangesAsync();
     return new User
     {

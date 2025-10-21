@@ -6,7 +6,7 @@ public class CallAggregate
   {
     if (int.TryParse(Percentage.TrimEnd('%'), out int percentValue))
     {
-      return percentValue >= 90;
+      return percentValue >= 60;
     }
     return false;
   }

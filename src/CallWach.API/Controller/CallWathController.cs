@@ -2,6 +2,7 @@ using CallWach.Domain.Aggregates;
 using CallWatch.Application.UseCases.GetAllCalls;
 using CallWatch.Application.UseCases.GetCallInfo;
 using CallWatch.Application.UseCases.Login;
+using CallWatch.Domain.Interfaces;
 using CallWatch.Domain.Repositories;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -13,13 +14,15 @@ public class CallWathController(
   ILoginUseCase loginUseCase,
   IGetAllCallsUseCase getAllCallsUseCase,
   IGetCallInfoUseCase getCallInfoUseCase,
-  IUsersReadOnlyRepository userRepository
+  IUsersReadOnlyRepository userRepository,
+  IMessageSender messageSender
   )
 {
   private readonly ILoginUseCase _loginUseCase = loginUseCase;
   private readonly IGetAllCallsUseCase _getAllCallsUseCase = getAllCallsUseCase;
   private readonly IGetCallInfoUseCase _getCallInfoUseCase = getCallInfoUseCase;
   private readonly IUsersReadOnlyRepository _userRepository = userRepository;
+  private readonly IMessageSender _messageSender = messageSender;
   private const string BASEURL = "https://gestaox.aec.com.br/Chamados/AtividadesChamadosV2";
   private const int TimerValue = 5;
   private readonly ChromeOptions _options = new();
@@ -32,8 +35,6 @@ public class CallWathController(
     using var driver = new ChromeDriver(_options);
 
     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-    var user = await _userRepository.GetByNumber("82996086951");
-    Console.WriteLine($"Usuário: {user!.Id}");
 
     try
     {
@@ -58,12 +59,11 @@ public class CallWathController(
               var callInfo = _getCallInfoUseCase.Execute(cells);
               var validatePercentage = CallAggregate.ValidatePercentage(callInfo.Percentage);
 
-              if (validatePercentage)
+              if (validatePercentage && callInfo.Status != "PENDENTE USUÁRIO")
               {
-                Console.WriteLine($"Chamado estourado ou quase estourando, responsável: {callInfo.Responsible}, \nPercentual: {callInfo.Percentage} \n{callInfo.Code}");
-                Console.WriteLine("---------------------------");
+                var user = await _userRepository.GetByName(callInfo.Responsible.ToLower());
+                _messageSender.Send(user!.Number, callInfo.Requester, callInfo.Service, callInfo.Service);
               }
-              // Console.WriteLine(cells[0].Text);
             }
           }
 
