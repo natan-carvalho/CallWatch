@@ -17,5 +17,4 @@ builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
 
 // Executa
-var runner = app.Services.GetRequiredService<CallWathController>();
-await runner.Execute();
+var runner = app.Services.GetRequiredService<CallWathController>(); runner.Execute();

@@ -1,0 +1,116 @@
+{
+  "name": "Call Watch",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "send-mail",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "312dd61e-a679-4190-9362-47945b763989",
+      "name": "Webhook",
+      "webhookId": "d0ed3cda-3e70-4bb1-a60d-5b5eb964adb4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "89f87b6f-2a62-4baa-95f4-9b90a4d5e30f",
+              "name": "Titulo",
+              "value": "={{ $json.body.subject }}",
+              "type": "string"
+            },
+            {
+              "id": "b27229a3-14a6-45ba-a6d6-11711c454b6d",
+              "name": "Para",
+              "value": "={{ $json.body.to[0].email }}",
+              "type": "string"
+            },
+            {
+               "id": "15e15a4a-8285-4bdd-933b-ae170e96a67e",
+              "name": "Mensagem",
+              "value": "={{ $json.body.text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        192,
+        0
+      ],
+      "id": "7591917e-60ac-41b3-ace7-cedcc53a8a22",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.Para }}",
+        "subject": "={{ $json.Titulo }}",
+        "message": "={{ $json.Mensagem }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        368,
+        0
+      ],
+      "id": "d9eeb027-0012-4ef5-8fce-b56a3e8df733",
+      "name": "Send a message",
+      "webhookId": "985ac26b-c7dd-4797-9861-0740bc1ba855",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "EkQwqZqOAEb5VRnq",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "6228b0cc-faef-47dc-af00-0d39bb8e0d74",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5695f21649c99390c10c31acccb9f81e3244bbe04cd7f84189b58e780cdc4cf0"
+  },
+  "id": "y5R6yf6dSjSh1qw8",
+  "tags": []
+}
+

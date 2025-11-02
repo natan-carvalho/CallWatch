@@ -1,6 +1,8 @@
+using CallWatch.Domain.Interfaces;
 using CallWatch.Domain.Repositories;
 using CallWatch.Infrastructure.DataAccess;
 using CallWatch.Infrastructure.DataAccess.Repositories;
+using CallWatch.Infrastructure.MessageSender;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,7 @@ public static class DependencyInjectionExtension
   private static void AddRepository(IServiceCollection services)
   {
     services.AddScoped<IUsersReadOnlyRepository, UsersRepository>();
+    services.AddScoped<IMessageSender, WhatsAppSender>();
   }
 
   private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
