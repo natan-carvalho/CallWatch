@@ -18,3 +18,5 @@ rm google-chrome-stable_current_amd64.deb
 
 # 7. Verifica a instalação
 google-chrome --version
+
+# "Connection": "Data Source=C:\\Users\\natan\\projects\\CallWatch\\src\\CallWatch.Infrastructure\\database\\db.db;"

@@ -29,7 +29,7 @@ public class CallWathController(
 
   public async Task Execute()
   {
-    _options.AddArgument("--start-maximized");
+    // _options.AddArgument("--start-maximized");
     _options.AddArgument("--headless");
     _options.AddArgument("--disable-gpu");
     using var driver = new ChromeDriver(_options);
@@ -61,8 +61,8 @@ public class CallWathController(
 
               if (validatePercentage && callInfo.Status != "PENDENTE USUÁRIO")
               {
-                var user = await _userRepository.GetByName(callInfo.Responsible.ToLower());
-                _messageSender.Send(user!.Number, callInfo.Requester, callInfo.Service, callInfo.Service);
+                // var user = await _userRepository.GetByName(callInfo.Responsible.ToLower());
+                // _messageSender.Send(user!.Number, callInfo.Requester, callInfo.Service, callInfo.Service);
               }
             }
           }
