@@ -28,7 +28,8 @@ public static class DependencyInjectionExtension
     var dbConnection = configuration.GetConnectionString("Connection");
     services.AddDbContext<CallWatchDbContext>(options =>
     {
-      options.UseSqlite(@"Data Source=C:\Users\natan\projects\CallWatch\src\CallWatch.Infrastructure\database\db.db");
+      // options.UseSqlite(@"Data Source=C:\Users\natan\projects\CallWatch\src\CallWatch.Infrastructure\database\db.db");
+      options.UseSqlite(dbConnection);
     });
   }
 }
